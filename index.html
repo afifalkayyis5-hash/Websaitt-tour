@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wisata Bantul Pro</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+/* NAVBAR */
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(15,23,42,0.8);
+backdrop-filter:blur(10px);
+display:flex;
+justify-content:space-between;
+padding:15px 40px;
+z-index:1000;
+}
+
+nav h1{
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://source.unsplash.com/1600x900/?beach,indonesia');
+background-size:cover;
+}
+
+.hero h2{
+font-size:48px;
+}
+
+.hero p{
+margin:20px 0;
+}
+
+.btn{
+background:#38bdf8;
+padding:10px 20px;
+border-radius:8px;
+text-decoration:none;
+color:black;
+font-weight:bold;
+}
+
+/* SECTION */
+section{
+padding:100px 40px;
+}
+
+/* CARD */
+.card{
+background:rgba(255,255,255,0.05);
+border-radius:15px;
+overflow:hidden;
+margin-bottom:30px;
+backdrop-filter:blur(10px);
+transition:0.5s;
+opacity:0;
+transform:translateY(50px);
+}
+
+.card.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+/* VIDEO */
+iframe{
+width:100%;
+height:400px;
+border-radius:15px;
+}
+
+/* MAP */
+.map iframe{
+width:100%;
+height:400px;
+border:0;
+border-radius:15px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<h1>AS Tour</h1>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#wisata">Wisata</a></li>
+<li><a href="#video">Video</a></li>
+<li><a href="#map">Map</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div>
+<h2>Jelajahi Keindahan Bantul</h2>
+<p>Wisata alam, pantai, dan kuliner terbaik di Yogyakarta</p>
+<a href="#wisata" class="btn">Lihat Wisata</a>
+</div>
+</section>
+
+<!-- WISATA -->
+<section id="wisata">
+
+<div class="card">
+<img src="https://files.catbox.moe/516v1z.png" />
+<div class="card-content">
+<h2>Pantai Parangtritis</h2>
+<p>Pantai Parangtritis adalah salah satu destinasi wisata yang paling hits di Yogyakarta, terutama di kawasan pantai selatan. Berlokasi sekitar 27 kilometer dari pusat kota, pantai ini sangat mudah dijangkau.
+
+ 
+
+Pantai Parangtritis memberikan pemandangan laut yang super indah. Dengan suasana yang tenang dan damai, Parangtritis jadi tempat yang pas buat kamu yang mau melepas penat dari rutinitas sehari-hari.
+
+ 
+
+Salah satu hal yang bikin Pantai Parangtritis istimewa adalah ombaknya yang besar dan menantang, cocok banget untuk kamu yang suka surfing. Selain itu, pasir hitam yang unik di pantai ini memberi kesan yang berbeda. 
+
+ 
+
+Kamu bisa santai di tepi pantai, berfoto-foto keren, atau sekadar menikmati keindahan alam sambil mendengarkan suara ombak yang bergulung..</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://files.catbox.moe/3wcvmj.jpeg" />
+<div class="card-content">
+<h2>Hutan Pinus Mangunan</h2>
+<p>destinasi wisata alam populer di Dlingo, Bantul, Yogyakarta, yang terkenal dengan barisan pohon pinus menjulang tinggi, udara sejuk, dan suasana asri. 
+    Suasana dan Pemandangan: Hutan ini didominasi oleh pohon-pohon pinus yang rimbun dan tertata rapi, menciptakan pemandangan eksotis dan tempat "ngadem" (mencari udara dingin) yang ideal. Pagi hari sering diselimuti kabut tipis, memberikan kesan magis, sementara sore hari menawarkan suasana syahdu..</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://files.catbox.moe/lds62y.webp" />
+<div class="card-content">
+<h2>Malioboro</h2>
+<p>Lokasi dan Tata Kota: Malioboro terletak di jantung kota Yogyakarta, membentang dari Tugu Pal Putih hingga Titik Nol Kilometer (meliputi Jl. Margo Utomo, Jl. Malioboro, dan Jl. Margo Mulyo). Kawasan ini berbatasan dengan Stasiun Yogyakarta, Pasar Beringharjo, dan Gedung Agung.
+Penataan Modern: Setelah penataan tahun 2022, PKL dipindahkan ke Teras Malioboro 1 dan 2, menjadikan pedestrian lebih luas, bersih, dan nyaman bagi pejalan kaki.
+Daya Tarik Wisata:
+Belanja & Souvenir: Pusat oleh-oleh khas Yogyakarta seperti batik, kerajinan bambu/kulit, wayang, dan perak, terutama di Pasar Beringharjo dan Teras Malioboro.
+Kuliner: Warung lesehan malam hari yang menyajikan kuliner khas, termasuk gudeg dan wedang ronde.
+Suasana & Budaya: Banyak seniman yang tampil (musik, pantomim, lukis) terutama pada malam minggu. Pengunjung bisa naik andong atau becak untuk mengelilingi kawasan.
+Sejarah: Jalan ini merupakan poros filosofis Yogyakarta (Tugu-Keraton) dan saksi sejarah perjuangan, termasuk Serangan Umum 1 Maret 1949..</p>
+</div>
+</div>
+
+</section>
+
+<!-- VIDEO -->
+<section id="video">
+<h2>🎥 Video Wisata Bantul</h2>
+<br>
+<iframe src="https://files.catbox.moe/fwry7k.mp4" allowfullscreen></iframe>
+</section>
+
+<!-- MAP -->
+<section id="map" class="map">
+<h2>📍 Lokasi Bantul</h2>
+<br>
+<iframe src="https://maps.google.com/maps?q=Bantul&t=&z=10&ie=UTF8&iwloc=&output=embed"></iframe>
+</section>
+
+<!-- FOOTER -->
+<footer>
+© 2026 Wisata Bantul Pro 🚀
+</footer>
+
+<!-- SCRIPT ANIMASI -->
+<script>
+
+const cards = document.querySelectorAll('.card');
+
+window.addEventListener('scroll', () => {
+cards.forEach(card => {
+const cardTop = card.getBoundingClientRect().top;
+
+if(cardTop < window.innerHeight - 100){
+card.classList.add('show');
+}
+});
+});
+
+</script>
+
+</body>
+</html>
